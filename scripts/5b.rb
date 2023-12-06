@@ -57,7 +57,6 @@ class AlmanacReader
     lowest = Float::INFINITY
 
     @seed_ranges.each do |seed_range|
-      puts "Processing range #{seed_range}..."
       seed_range.each do |seed|
         location = find_seed_location(seed)
         lowest = location if location < lowest
