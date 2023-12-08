@@ -39,5 +39,5 @@ end
 
 # We're making the (big) assumption here that the first "ending" node we
 # reach while traversing the paths individually is the same "ending" node
-# that would be traversed while the routes were traversed in parallel.
+# that would be reached while the routes were traversed in parallel.
 puts steps_taken_per_route.inject(:lcm)
