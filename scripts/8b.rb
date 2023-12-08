@@ -18,7 +18,6 @@ lines[2..-1].each do |line|
   map[source] = { 'left' => left, 'right' => right }
 end
 
-target_position = 'ZZZ'
 steps_taken_per_route = []
 
 starting_positions.each do |starting_position|
@@ -27,7 +26,7 @@ starting_positions.each do |starting_position|
 
   while true
     break if current_position =~ /Z$/
-  
+
     instructions.each do |instruction|
       current_position = map[current_position][instruction]
       steps_taken += 1
